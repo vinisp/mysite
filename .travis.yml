@@ -3,7 +3,7 @@ node_js:
 - node
 sudo: required
 script:
-- yarn build
+- yarn start
 deploy:
   provider: heroku
   app: depp4
