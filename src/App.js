@@ -1,10 +1,14 @@
-import './App.css';
+import './globalStyle/App.scss';
+import {Main} from './sections/main/index'
+import {Content} from './sections/content/index'
+import {Footer} from './sections/footer/index'
 
 function App() {
   return (
     <div className="App">
-      <h1>Olá mundo, está aplicação é devops </h1>
-      <p>O mundo é dos loucos</p>
+      <Main />
+      <Content />
+      <Footer />
     </div>
   );
 }
