@@ -3,3 +3,26 @@
   margin: 0;
   padding:0;
 }
+
+.app{
+  display: grid;
+  grid-template-columns: 200px 400px auto;
+  grid-auto-rows: 200px;
+  gap: 10px;
+}
+
+.main{
+  grid-column: 1 / -1;
+  grid-row: 1 / 5;
+}
+
+.content{
+  grid-column: 2 / - 1;
+  grid-row: 6 / 9;
+}
+
+.footer{
+  grid-column: 1 / -1;
+  grid-row: 10 / 12;
+
+}

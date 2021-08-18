@@ -4,7 +4,7 @@ export function Content(){
 
   return(
   <>
-  <main>
+  <main className="content">
     <section>
       <h1>Job name </h1>
         <h3>Subtitle </h3>

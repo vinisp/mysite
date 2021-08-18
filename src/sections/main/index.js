@@ -4,7 +4,7 @@ export function Main(){
 
   return(
   <>
-    <div className="Main">
+    <div className="main">
       <header>
         <nav>
           <div className="logoHeader">

@@ -3,7 +3,7 @@ import './style.scss';
 export function Footer(){
   return(
   <>
-    <footer>
+    <footer className="footer">
       <div>
         <ul>
             <li>Imagem do linkedin</li>
