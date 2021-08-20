@@ -1,4 +1,19 @@
-h2{
-  color: green;
+.content{
+  
+  margin-right: 10em;
+  display: flex;
+}
+
+.textContent{
+  
+  padding: 6em 2em 4em 6em;
+  flex: 1;
+  background: purple;
+  opacity: 1;
+}
+
+.art{
+ flex: 1;
+
 
 }

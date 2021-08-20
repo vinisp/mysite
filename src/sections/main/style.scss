@@ -1,5 +1,7 @@
+$mainColor: #0A2D31;
+
 .main{
-  background:#0A2D31;
+  background: $mainColor;
   font-family: 'monospace', sans-serif;
   color: white;
 
@@ -72,4 +74,3 @@ nav{
   from{opacity: 0;}
   to{opacity: 1;}
 }
-
