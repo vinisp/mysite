@@ -3,3 +3,35 @@
   display: flex;
   flex-direction: column;
 }
+
+$borderRadius: 20px 0 0 20px;
+$IborderRadius: 0 20px 20px 0;
+
+.content-box{
+  margin-right: 10em;
+  display: flex;
+  animation: fadeIn 2s both;
+}
+
+.textContent{
+  border-radius: $borderRadius;
+  box-shadow: -5px 5px 25px 0px black;
+  padding: 6em 2em 4em 6em;
+  flex: 1;
+  background: #f3f3f3;
+  border: double 10px purple;
+    &:nth-child(even){
+      border-radius: $IborderRadius;
+    }
+  div{
+    padding: 5em;
+    border-right: solid black 15px;
+    border-radius: $borderRadius;
+    background: #f2f2f2;
+    height: 100%;
+  }
+}
+
+.art{
+ flex: 1;
+}
