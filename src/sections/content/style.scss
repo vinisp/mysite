@@ -1,37 +1,104 @@
-.content{
-  gap: 5em;
-  display: flex;
-  flex-direction: column;
-}
+$borderRadiusNormal: 10px 0 0 10px;
+$borderRadiusInvert: 0 10px 10px 0;
 
-$borderRadius: 20px 0 0 20px;
-$IborderRadius: 0 20px 20px 0;
-
-.content-box{
-  margin-right: 10em;
-  display: flex;
-  animation: fadeIn 2s both;
-}
-
-.textContent{
-  border-radius: $borderRadius;
-  box-shadow: -5px 5px 25px 0px black;
-  padding: 6em 2em 4em 6em;
-  flex: 1;
-  background: #f3f3f3;
-  border: double 10px purple;
-    &:nth-child(even){
-      border-radius: $IborderRadius;
-    }
-  div{
-    padding: 5em;
-    border-right: solid black 15px;
-    border-radius: $borderRadius;
-    background: #f2f2f2;
-    height: 100%;
+@keyframes scrollLeft{
+  0%{
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  100%{
+    opacity: 1;
   }
 }
 
-.art{
- flex: 1;
+@keyframes scrollRigth{
+  0%{
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+
+
+
+.content{
+  background: #0A2D31;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 5em;
+  padding: 5em 10em;
+  margin-right: 15em;
+  border-radius: 12px;
+  box-shadow: 0 8px 32px 0 #000000;
+}
+
+.content-box{
+  height: 350px;
+  width: 1200px;
+  opacity: 0.5;
+  font-family: 'monospace', sans-serif;
+  backdrop-filter: blur(16px) saturate(165%);
+  -webkit-backdrop-filter: blur(16px) saturate(165%);
+  background: rgba(239,241,244,0.43);
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.125);
+  box-shadow: 0 8px 32px 0 rgba(255,255,255,0.25);
+  display: flex;
+
+    &:hover{
+      cursor: pointer;
+      box-shadow: 0 10px 50px 0 rgba(255,255,255,0.35)
+    }
+
+    &:nth-child(odd){
+      animation: scrollRigth 4000ms both ease-out;
+
+    }
+    &:nth-child(even){
+      align-self: flex-end;
+      animation: scrollLeft 3500ms both ease-out;
+    }
+
+  .textContent{
+    background: none;
+    color: white;
+    flex: 3;
+    padding: 2em;
+    border-radius: $borderRadiusNormal;
+
+      &:nth-child(even){ border-radius: $borderRadiusInvert;}
+
+        h1{
+          color: white;
+          animation: fadeIn 1000ms 1000ms both ease-in-out;
+          line-height: 1.5;
+        }
+        h3{
+          color: #51e901;
+          line-height: 1.5;
+          animation: fadeIn 1500ms 1500ms both ease-in-out;
+        }
+        .resume{
+          color: white;
+          animation: fadeIn 2s 2s both ease-in-out }
+      
+    .resume{
+      margin-top: 3em;
+      text-align: justify;
+      line-height:1.5;
+      font-weight: 500;
+    }
+
+  }
+
+  .art{
+    background: transparent;
+    flex: 2;
+  }
 }
