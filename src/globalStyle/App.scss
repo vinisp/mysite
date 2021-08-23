@@ -5,7 +5,7 @@
 }
 
 .app{
-  height: 2800px;
+  height: 2900px;
   display: grid;
   grid-template-columns: 200px 400px auto;
   grid-auto-rows: 100px;
@@ -26,11 +26,12 @@
 .content{
   margin-top: 5em;
   grid-column: 2 / - 1;
-  grid-row: 10 / 15;
+  grid-row: 10 / 26;
 }
 
 .footer{
+  background: purple;
+  color: white;
   grid-column: 1 / -1;
-  grid-row: 16 / 19;
-
+  grid-row: 26 / 30;
 }

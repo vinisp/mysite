@@ -1,31 +1,5 @@
-$borderRadius: 20px 0px 0px 20px;
-
 .content{
-  margin-right: 10em;
+  gap: 5em;
   display: flex;
-}
-
-.textContent{
-  border-radius: $borderRadius;
-  box-shadow: -5px 5px 25px 0px black;
-  padding: 6em 2em 4em 6em;
-  flex: 1;
-  background: #f3f3f3;
-  border: double 10px purple;
-  animation: fadeIn 3000ms both ease-in-out;
-  div{
-    padding: 5em;
-    border-right: solid black 15px;
-    border-radius: $borderRadius;
-    background: #f2f2f2;
-    height: 100%;
-  }
-}
-
-.art{
- flex: 1;
-}
-
-.on{
-  overflow-anchor: auto;
+  flex-direction: column;
 }

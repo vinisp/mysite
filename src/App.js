@@ -1,4 +1,8 @@
 import {useState, useEffect} from "react";
+import {BrowserRouter as Router,
+Switch,
+Route,
+Link} from "react-router-dom";
 
 //Components//
 
@@ -23,19 +27,17 @@ useEffect(() => {
 }, [])
 
   return (
-<div className="app">
-  <Header />
-    <Main />
-      <p>{offsetY} </p>
-        {offsetY >= 114 ? <Content
-          title="CyberMonkey"
-          subTitle="Logo"
-          strongTerm="Meu logo"
-          resume="Um orgulho de trampo"
-        /> 
-            : null}
+    <div className="app">
+      <Header />
+      <Router >
+        <Route path="/">
+          <Main />
+          <Content />
+          <p>{offsetY} </p>
+        </Route>
+      </Router>
       <Footer />
-  </div>
+    </div>
   );
 }
 

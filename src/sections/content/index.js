@@ -1,32 +1,32 @@
-import React from 'react';
+import {NormalContent} from './normalContent/index';
+import {InvertContent} from './invertContent/index';
 import './style.scss'
 
-export class Content extends React.Component {
-  render(){
-  const jobInfo = {
-  title: this.props.title,
-  subTitle: this.props.subTitle,
-  resume: this.props.resume,
-  strongTerm: this.props.strongTerm
-  }
-  return(
-<>
-  <main className="content">
-    <section className="textContent">
-      <div>
+export const Content = () =>{
+return (
+  <>
+  <div className="content">
+    <NormalContent
+      title="Teste1"
+      subTitle="Testando"
+      resume="Apenas um teste"
+      strongTerm="Organizando" />
 
-      <h1>{jobInfo.title} </h1>
-        <h3> {jobInfo.subTitle} </h3>
-          <p> <strong> {jobInfo.strongTerm} </strong> {jobInfo.resume} </p>
+    <InvertContent
+      title="Teste2"
+      subTitle="Testando de novo"
+      resume="Segundo teste"
+      strongTerm="Aqui vai outro teste" />
 
-        </div>
-    </section>
-    <div className="art"> 
-        Illustração ou imagem
-      </div>
-  </main>
+    <NormalContent
+      title="teste3"
+      subTitle="Bora testar"
+      resume="Terceiro teste"
+      strongTerm="Nada como testar de novo"
 
+      />
+
+  </div>
   </>
-)}
-
+  ) 
 }
