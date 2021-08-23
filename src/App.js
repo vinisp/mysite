@@ -1,8 +1,7 @@
 import {useState, useEffect} from "react";
 import {BrowserRouter as Router,
 Switch,
-Route,
-Link} from "react-router-dom";
+Route} from "react-router-dom";
 
 //Components//
 
@@ -26,18 +25,21 @@ useEffect(() => {
   return () => window.removeEventListener('scroll', handleScroll)
 }, [])
 
-  return (
+return (
+  <Router >
     <div className="app">
       <Header />
-      <Router >
+      <Switch >
         <Route path="/">
           <Main />
           <Content />
           <p>{offsetY} </p>
-        </Route>
-      </Router>
+            </Route>
+        </Switch>
+  
       <Footer />
-    </div>
+        </div>
+    </Router>
   );
 }
 
