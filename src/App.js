@@ -1,7 +1,14 @@
 import {useState, useEffect} from "react";
-import {Main} from './sections/main/index'
-import {Content} from './sections/content/index'
-import {Training} from './sections/training/index'
+
+//Components//
+
+import {Main} from './sections/main/index';
+import {Content} from './sections/content/index';
+import {Header} from './components/navHeader/index';
+import {Footer} from './components/footer/index';
+
+//Global Theme
+
 import './globalStyle/App.scss';
 
 function App() {
@@ -16,7 +23,8 @@ useEffect(() => {
 }, [])
 
   return (
-  <div className="app">
+<div className="app">
+  <Header />
     <Main />
       <p>{offsetY} </p>
         {offsetY >= 114 ? <Content
@@ -26,9 +34,7 @@ useEffect(() => {
           resume="Um orgulho de trampo"
         /> 
             : null}
-          <Training
-            text={offsetY}
-          />
+      <Footer />
   </div>
   );
 }

@@ -14,39 +14,6 @@ $mainColor: #0A2D31;
   grid-auto-rows: 100px;
 }
 
-header{
-  grid-column: 1 / -1;
-  grid-row: 1 / 1;
-
-}
-  
-nav{
-  height: 100%;
-  display: flex;
-  justify-content: flex-start;
-  gap: 4em;
-}
-
-.logoHeader{
- display: flex;
- align-items: center;
-}
-
-.menu{
-
-  li {
-  list-style: none;
-
-  }
-
-  flex: 2;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  gap: 2em;
-  font-size: 1.2em;
-}
-
 .title{
   padding-right: 3em;
   grid-row: 4 / 6;

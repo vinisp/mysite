@@ -8,22 +8,29 @@
   height: 2800px;
   display: grid;
   grid-template-columns: 200px 400px auto;
-  grid-auto-rows: 200px;
-  gap: 10px;
+  grid-auto-rows: 100px;
+  gap: 0;
+}
+
+.Header{
+  grid-column: 1 / -1;
+  grid-row: 1 / 1;
+
 }
 
 .main{
   grid-column: 1 / -1;
-  grid-row: 1 / 5;
+  grid-row: 2 / 10;
 }
 
 .content{
+  margin-top: 5em;
   grid-column: 2 / - 1;
-  grid-row: 6 / 9;
+  grid-row: 10 / 15;
 }
 
 .footer{
   grid-column: 1 / -1;
-  grid-row: 10 / 12;
+  grid-row: 16 / 19;
 
 }
