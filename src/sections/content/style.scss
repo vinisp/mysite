@@ -15,8 +15,8 @@ $borderRadiusInvert: 0 10px 10px 0;
 @keyframes scrollRigth{
   0%{
     opacity: 0;
-    width: 0;
     height: 0;
+    width: 0;
   }
   100%{
     opacity: 1;
@@ -25,6 +25,7 @@ $borderRadiusInvert: 0 10px 10px 0;
 
 .content{
   background: #0A2D31;
+  width: 1200px;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
@@ -38,7 +39,7 @@ $borderRadiusInvert: 0 10px 10px 0;
 
 .content-box{
   height: 350px;
-  width: 1200px;
+  width: 800px;
   opacity: 0.5;
   font-family: 'monospace', sans-serif;
   backdrop-filter: blur(16px) saturate(165%);
@@ -55,12 +56,12 @@ $borderRadiusInvert: 0 10px 10px 0;
     }
 
     &:nth-child(odd){
-      animation: scrollRigth 4000ms both ease-out;
+      animation: scrollRigth 2400ms both ease-out;
 
     }
     &:nth-child(even){
       align-self: flex-end;
-      animation: scrollLeft 3500ms both ease-out;
+      animation: scrollLeft 1400ms both ease-out;
     }
 
   .textContent{
