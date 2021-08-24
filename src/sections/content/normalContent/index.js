@@ -9,7 +9,7 @@ export class NormalContent extends React.Component {
   }
   return(
 <>
-<div className="content-box basic">
+<div className="content-box">
   
     <section className="textContent">
       <h1>{jobInfo.title} </h1>

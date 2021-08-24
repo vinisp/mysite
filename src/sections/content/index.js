@@ -1,6 +1,5 @@
 import {useState, useEffect} from 'react';
 import {NormalContent} from './normalContent/index';
-import {InvertContent} from './invertContent/index';
 import './style.scss';
 
 export const Content = () =>{
@@ -29,13 +28,13 @@ return (
         </NormalContent> : null}
 
   {offsetY >= 600 ? 
-    <InvertContent
+    <NormalContent
       title="10 dicas para ser mais produtivo"
       subTitle="Disciplina, organização e foco"
     > <p>
         Neste artigo elenco as 10 dicas que considero mais valiosas
         para ser uma pessoa mais produtivo </p>
-          </InvertContent> : null}
+          </NormalContent> : null}
 
   {offsetY >= 1000 ?
     <NormalContent
@@ -44,9 +43,9 @@ return (
     > <p>  
       Trabalhei durante uma década com atendimento ao cliente em serviços de Sac e e-commerce,
       tive o contato com diversos sistemas e plataformas,
-      se eu tivesse que desenvolver um sistema como faria.
+      se eu tivesse que desenvolver um sistema como faria. {offsetY}
       </p>
-    </NormalContent> : null}
+        </NormalContent> : null}
 </div>
   ) 
 }
