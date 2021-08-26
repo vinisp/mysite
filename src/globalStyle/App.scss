@@ -4,10 +4,16 @@
   padding:0;
 }
 
+html{
+  max-width: 1900px;
+}
+
 .app{
-  height: 2900px;
+  width: 100%;
+  background: #f2f2f2;
+  max-height: 2900px;
   display: grid;
-  grid-template-columns: 200px 400px auto;
+  grid-template-columns: repeat(12,1fr);
   grid-auto-rows: 100px;
   gap: 0;
   overflow-x: hidden;
@@ -16,7 +22,6 @@
 .Header{
   grid-column: 1 / -1;
   grid-row: 1 / 1;
-
 }
 
 .main{
@@ -26,13 +31,13 @@
 
 .content{
   margin-top: 5em;
-  grid-column: 2 / - 1;
-  grid-row: 10 / 26;
+  grid-column: 1 / - 1;
+  grid-row: 10 / 24;
 }
 
 .footer{
   background: purple;
   color: white;
   grid-column: 1 / -1;
-  grid-row: 26 / 30;
+  grid-row: 24 / 30;
 }

@@ -1,35 +1,9 @@
-$borderRadiusNormal: 10px 0 0 10px;
-$borderRadiusInvert: 0 10px 10px 0;
-
-@keyframes scrollLeft{
-  0%{
-    opacity: 0;
-    width: 0;
-    height: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
-@keyframes scrollRigth{
-  0%{
-    opacity: 0;
-    height: 0;
-    width: 0;
-  }
-  100%{
-    opacity: 1;
-  }
-}
-
 .content{
-  background: #0A2D31;
-  width: 1200px;
+  background: transparent;
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
+  justify-content: center;
+  align-items: center;
   gap: 5em;
   padding: 5em 10em;
   margin-right: 15em;
@@ -38,36 +12,26 @@ $borderRadiusInvert: 0 10px 10px 0;
 }
 
 .content-box{
-  height: 350px;
-  width: 820px;
+  height: 820px;
+  max-width: 450px;
   opacity: 0.5;
   font-family: 'monospace', sans-serif;
   backdrop-filter: blur(16px) saturate(165%);
   -webkit-backdrop-filter: blur(16px) saturate(165%);
-  background: rgba(239,241,244,0.43);
+  background: rgba(0,0,0,0.43);
   border-radius: 12px;
   border: 1px solid rgba(255,255,255,0.125);
   box-shadow: 0 8px 32px 0 rgba(255,255,255,0.25);
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 
     &:hover{
       cursor: pointer;
       box-shadow: 0 10px 50px 0 rgba(255,255,255,0.35)
     }
-
-    &:nth-child(odd){
-      animation: scrollRigth 2400ms both ease-out;
-
-    }
     &:nth-child(even){
 
-      align-self: flex-end;
-      animation: scrollLeft 1400ms both ease-out;
-
-      .art{
-      order: -1;
-      }
+      align-self: flex-start;
     }
 
   .textContent{
@@ -75,23 +39,22 @@ $borderRadiusInvert: 0 10px 10px 0;
     color: white;
     flex: 3;
     padding: 2em;
-    border-radius: $borderRadiusNormal;
 
-      &:nth-child(even){ border-radius: $borderRadiusInvert;}
+      &:nth-child(even){ }
 
         h1{
           color: white;
-          animation: fadeIn 1000ms 1000ms both ease-in-out;
+          animation: fadeIn 500ms both ease-in-out;
           line-height: 1.5;
         }
         h3{
           color: #51e901;
           line-height: 1.5;
-          animation: fadeIn 1500ms 1500ms both ease-in-out;
+          animation: fadeIn 750ms both ease-in-out;
         }
         .resume{
           color: white;
-          animation: fadeIn 2s 2s both ease-in-out }
+          animation: fadeIn 900ms both ease-in-out }
       
     .resume{
       margin-top: 3em;
@@ -105,5 +68,6 @@ $borderRadiusInvert: 0 10px 10px 0;
   .art{
     background: transparent;
     flex: 2;
+    order: -1;
   }
 }

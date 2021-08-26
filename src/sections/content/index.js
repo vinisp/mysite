@@ -27,7 +27,7 @@ return (
           do meu logo, neste artigo detalhar o processo de criação </p>
         </NormalContent> : null}
 
-  {offsetY >= 600 ? 
+  {offsetY >= 144 ? 
     <NormalContent
       title="10 dicas para ser mais produtivo"
       subTitle="Disciplina, organização e foco"
@@ -36,7 +36,7 @@ return (
         para ser uma pessoa mais produtivo </p>
           </NormalContent> : null}
 
-  {offsetY >= 1000 ?
+  {offsetY >= 144 ?
     <NormalContent
       title="1. Trabalhos que tenho vontande de fazer"
       subTitle="Plataforma de E-commerce"
