@@ -15,8 +15,8 @@ useEffect(() => {
 
 return (
 <div className="content">
-
-  {offsetY >= 144 ? 
+  <div className="titleSection"> <h2> JOBS </h2> </div>  
+  {offsetY >= 1 ? 
     <NormalContent
       title="Logo Vinicius"
       subTitle="Como criei meu logo"
@@ -27,7 +27,7 @@ return (
           do meu logo, neste artigo detalhar o processo de criação </p>
         </NormalContent> : null}
 
-  {offsetY >= 144 ? 
+  {offsetY >= 1 ? 
     <NormalContent
       title="10 dicas para ser mais produtivo"
       subTitle="Disciplina, organização e foco"
@@ -36,7 +36,7 @@ return (
         para ser uma pessoa mais produtivo </p>
           </NormalContent> : null}
 
-  {offsetY >= 144 ?
+  {offsetY >= 1 ?
     <NormalContent
       title="1. Trabalhos que tenho vontande de fazer"
       subTitle="Plataforma de E-commerce"

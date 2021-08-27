@@ -12,14 +12,14 @@ export class NormalContent extends React.Component {
 <div className="content-box">
   
     <section className="textContent">
-      <h1>{jobInfo.title} </h1>
-      <h3>{jobInfo.subTitle} </h3>
+      <h3>{jobInfo.title} </h3>
+      <h4>{jobInfo.subTitle} </h4>
       <div className="resume">{this.props.children}</div>
     </section>
     <div className="art"> 
         Illustração ou imagem
       </div>
-    
+
   </div>
 </>
 )}

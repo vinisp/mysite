@@ -27,17 +27,19 @@ html{
 .main{
   grid-column: 1 / -1;
   grid-row: 2 / 10;
+  background: red;
 }
 
 .content{
-  margin-top: 5em;
-  grid-column: 1 / - 1;
-  grid-row: 10 / 24;
+  background: yellow;
+  margin: 0 auto;
+  grid-column: 1 / -1;
+  grid-row: 10 / 26;
 }
 
 .footer{
   background: purple;
   color: white;
   grid-column: 1 / -1;
-  grid-row: 24 / 30;
+  grid-row: 22 / 26;
 }
