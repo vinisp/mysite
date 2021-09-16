@@ -5,17 +5,13 @@ export const Header = () => {
 return(
   <>
     <header className="Header">
-        <nav>
-          <div className="logoHeader">
-            LOGO
-          </div>
-          <ul className="menu">
-            <li>Home</li>
-            <li>Contact</li>
-            <li>About</li>
-          </ul>
-        </nav>
-          </header>
+
+          <nav className="logoHeader">
+            <h1> VINICIUS SILVA </h1>
+            <p> Front end web developer. </p>
+          </nav>
+
+    </header>
   </>
   )
 }

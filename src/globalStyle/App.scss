@@ -1,11 +1,23 @@
+// @import url('https://fonts.googleapis.com/css2?family=Karla:ital,wght@0,200;0,300;0,500;1,200&family=Rubik:wght@500&display=swap');
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding:0;
 }
 
+
 html{
   max-width: 1900px;
+}
+
+h1,h2,h3,h4{
+  font-family: 'Rubik', sans-serif;
+}
+
+p{
+  font-family: 'Karla', sans-serif;
+  font-weight: 200;
 }
 
 .app{
@@ -27,11 +39,9 @@ html{
 .main{
   grid-column: 1 / -1;
   grid-row: 2 / 10;
-  background: red;
 }
 
 .content{
-  background: yellow;
   margin: 0 auto;
   grid-column: 1 / -1;
   grid-row: 10 / 26;

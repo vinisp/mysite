@@ -1,21 +1,15 @@
-$mainColor: #0A2D31;
-
-li {
-  list-style: none;
-}
+$mainColor: #7FBEEB;
+$fontColor: #0F0326;
 
 .Header{
-
   background: $mainColor;
-  color: white;
-  padding: 2em;
-
-  nav{
-    display: flex;
-    gap: 2em;
-  }
-  ul{
-    display: flex;
-    gap: 1em;
+  color: $fontColor;
+  padding-top: 1.2em;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  height: 70px;
+  .logoHeader{
+    grid-column: 2/-1;
+    margin-bottom: 2em;
   }
 }
