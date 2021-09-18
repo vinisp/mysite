@@ -1,4 +1,8 @@
 $mainColor: #0A2D31;
+$artEmpy:#C2EFB3;
+$mainTablet: 768px;
+$mainSmartphone: 360px;
+
 
 .main{
   background: #f2f2f2;
@@ -11,9 +15,20 @@ $mainColor: #0A2D31;
   grid-auto-rows: 100px;
 }
 
+.artMain{
+  background: $artEmpy;
+  font-size: 120px;
+  grid-column: 7 / -1;
+  grid-row: 1 / 8;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .title{
   padding-right: 0;
-  grid-row: 3 / 12;
+  grid-row: 2 / 8;
   grid-column: 2 / 6;
   display:flex;
   flex-direction: column;
@@ -75,4 +90,21 @@ $mainColor: #0A2D31;
 @keyframes fadeIn{
   from{opacity: 0;}
   to{opacity: 1;}
+}
+
+@media (min-width: $mainSmartphone) and (max-width: $mainTablet){
+  .main{
+    display: flex;
+    gap: 3em;
+    flex-direction: column;
+    height: 660px;
+  }
+
+  .buttonContainer{
+  justify-content: center;
+  }
+
+  .skills{
+    justify-content: center;
+  }
 }

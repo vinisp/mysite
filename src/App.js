@@ -12,6 +12,7 @@ import {Footer} from './components/footer/index';
 //Global Theme
 
 import './globalStyle/App.scss';
+ 
 
 function App() {
 return (
@@ -24,7 +25,6 @@ return (
           <Content />
         </Route>
       </Switch>
-  
       <Footer />
         </div>
     </Router>

@@ -18,8 +18,8 @@ return (
   <div className="titleSection"> <h2> JOBS </h2> </div>  
   {offsetY >= 1 ? 
     <NormalContent
-      title="Logo Vinicius"
-      subTitle="Como criei meu logo"
+      title="E-commerce"
+      subTitle="Programando a interface"
     > <p> Quais referências utilizei ? </p>
       <p> Qual Ideia quero transmitir ? </p>
       <p> Por que escolhi esse formato ? </p>
@@ -29,23 +29,13 @@ return (
 
   {offsetY >= 1 ? 
     <NormalContent
-      title="10 dicas para ser mais produtivo"
-      subTitle="Disciplina, organização e foco"
+      title="Landing Page"
+      subTitle="Paginas para converter mais."
     > <p>
         Neste artigo elenco as 10 dicas que considero mais valiosas
         para ser uma pessoa mais produtivo </p>
-          </NormalContent> : null}
+      </NormalContent> : null}
 
-  {offsetY >= 1 ?
-    <NormalContent
-      title="1. Trabalhos que tenho vontande de fazer"
-      subTitle="Plataforma de E-commerce"
-    > <p>  
-      Trabalhei durante uma década com atendimento ao cliente em serviços de Sac e e-commerce,
-      tive o contato com diversos sistemas e plataformas,
-      se eu tivesse que desenvolver um sistema como faria. {offsetY}
-      </p>
-        </NormalContent> : null}
-</div>
+ </div>
   ) 
 }
