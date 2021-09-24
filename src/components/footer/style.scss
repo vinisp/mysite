@@ -1,4 +1,53 @@
 .footer{
   margin-top: 5em;
+  background:#7FBEEB;
+  display: grid;
+  grid-template-columns: repeat(12,1fr);
+  padding-top: 3em;
+}
+
+.contactInfo{
+  grid-column: 2/4;
+  color: black;
   display: flex;
+  flex-direction: column;
+  
+  h1{
+    font-size: 3em;
+    margin-bottom: .3em;
+  }
+  h3,p{
+    margin-bottom: .2em;
+  }
+}
+
+
+.socialIcons{
+  grid-column: 5/7;
+  display: flex;
+  gap: 3em;
+}
+
+.linkedIn{
+  background: url('../../assets/footer/linkedin.svg');
+  background-repeat: no-repeat ;
+  background-size: cover;
+  height: 80px; 
+  width: 80px;
+}
+
+.behance{
+  background: url('../../assets/footer/behance.svg');
+  background-repeat: no-repeat ;
+  background-size: cover;
+  height: 80px; 
+  width: 80px;
+}
+
+.instagram{
+  background: url('../../assets/footer/instagram-old.svg');
+  background-repeat: no-repeat ;
+  background-size: cover;
+  height: 80px; 
+  width: 80px;
 }
