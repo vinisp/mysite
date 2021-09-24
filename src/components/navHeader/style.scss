@@ -6,7 +6,14 @@ $fontColor: #0F0326;
   color: $fontColor;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
+  height: 40px;
+  padding: 0.5em 0;
   .logoHeader{
     grid-column: 2/-1;
+    display: flex;
+    gap: 0.5em;
+    p{
+      align-self: flex-end;
+    }
   }
 }
