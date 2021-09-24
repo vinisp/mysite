@@ -4,11 +4,12 @@ $fontColor: #0F0326;
 .Header{
   background: $mainColor;
   color: $fontColor;
-  padding-top: 1.2em;
+  padding: 0;
   display: grid;
   grid-template-columns: repeat(12, 1fr);
   .logoHeader{
     grid-column: 2/-1;
-    margin-bottom: 2em;
+    margin: 0;
+    border: solid 2px black;
   }
 }
