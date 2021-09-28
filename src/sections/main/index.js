@@ -26,7 +26,7 @@ export function Main(){
 
       <div className="artMain"> ART </div>
         <div className="title">
-          <h1 className="titleName">FRONT END WEB DEVELOPER</h1>
+          <h1 className="titleName">FRONT END WEB DEVELOPER !!!</h1>
             <p className="subTitle">asdoijkasidjioasjdasjiodjasiodjasiojdioasj aisjd ioasjd ioaj aisj dijasi djasio djaisojd iasjd iaosjd ioajs idoajs idojsa  Developer better interfaces and sites for your bussinessss, with moderns technologies, tools, UI and UX for better apresention of you organization. LOREM YPSUN kijdsijaisdjiasjdiasdjijasoidjasiojdioasjiodjaisodiajsdi</p>
             <div className="buttonContainer">
               <div className={classes.root}>
