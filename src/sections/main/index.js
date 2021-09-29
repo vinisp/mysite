@@ -7,6 +7,7 @@ import sassLogo from '../../assets/logos/sass.svg';
 import graphqlLogo from '../../assets/logos/graphql.svg';
 import mariadbLogo from '../../assets/logos/mariadb.svg';
 import nodejsLogo from '../../assets/logos/nodejs.svg';
+import art1 from '../../assets/arts/flat1.svg';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,10 +25,15 @@ export function Main(){
   <>
 <div className="main">
 
-      <div className="artMain"> ART </div>
+      <div className="artMain"> <img src={art1} alt="flat-design"/> </div>
         <div className="title">
           <h1 className="titleName">FRONT END WEB DEVELOPER !!!</h1>
-            <p className="subTitle">asdoijkasidjioasjdasjiodjasiodjasiojdioasj aisjd ioasjd ioaj aisj dijasi djasio djaisojd iasjd iaosjd ioajs idoajs idojsa  Developer better interfaces and sites for your bussinessss, with moderns technologies, tools, UI and UX for better apresention of you organization. LOREM YPSUN kijdsijaisdjiasjdiasdjijasoidjasiojdioasjiodjaisodiajsdi</p>
+            <p className="subTitle">
+            Lorem ipsum dolor sit amet consectetur,
+     adipisicing elit. Cupiditate,
+      autem totam suscipit ullam iste qui quaerat incidunt provident
+       tenetur aliquam nostrum corrupti minus labore,
+        sapiente vitae asperiores accusamus voluptatum itaque? </p>
             <div className="buttonContainer">
               <div className={classes.root}>
                 <Button variant="contained" color="secondary">Agendar </Button>
