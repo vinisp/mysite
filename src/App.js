@@ -12,7 +12,7 @@ import {Footer} from './components/footer/index';
 //Global Theme
 
 import './globalStyle/App.scss';
- 
+
 
 function App() {
 return (

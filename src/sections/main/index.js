@@ -1,3 +1,5 @@
+import { useState, useEffect } from 'react';
+
 import './style.scss';
 import { makeStyles} from '@material-ui/core/styles';
 import Button from '@material-ui/core/Button';
@@ -22,29 +24,34 @@ const useStyles = makeStyles((theme) => ({
 export function Main(){
   const classes = useStyles();
 
-  const getPosts = async () => {
-    try{
-      const posts = await fetch("https://deppback.herokuapp.com/").then((data) => data.json())
-      return posts
-    }catch(error){
-      console.log(error)
+  const [Allposts, setPosts] = useState({posts: []});
+
+  useEffect(() => { 
+    getPosts();
+    return () => {};
+  },[])
+
+  async function getPosts() {
+    try{ setPosts(await fetch("https://deppback.herokuapp.com/")
+        .then((data) => data.json()))}
+    catch(error){
+      console.error(error)
     }
   }
 
   return(
   <>
-  {console.log(getPosts())}
 <div className="main">
 
       <div className="artMain"> <img src={art1} alt="flat-design"/> </div>
         <div className="title">
-          <h1 className="titleName">FRONT END WEB DEVELOPER !!!</h1>
-            <p className="subTitle">
-            Lorem ipsum dolor sit amet consectetur,
-     adipisicing elit. Cupiditate,
-      autem totam suscipit ullam iste qui quaerat incidunt provident
-       tenetur aliquam nostrum corrupti minus labore,
-        sapiente vitae asperiores accusamus voluptatum itaque? </p>
+          <h1 className="titleName">!FRONT END WEB DEVELOPER !!!</h1>
+            <div className="subTitle">
+            {Allposts.posts.length > 0 
+              ? Allposts.posts.map(value => 
+                <div key={value.id}> {value.title} {value.content} </div> ) :
+               'loading' }
+            </div>
             <div className="buttonContainer">
               <div className={classes.root}>
                 <Button variant="contained" color="secondary">Agendar </Button>
