@@ -25,6 +25,7 @@ export function Main(){
   const getPosts = async () => {
     try{
       const posts = await fetch("https://deppback.herokuapp.com/").then((data) => data.json())
+      return posts
     }catch(error){
       console.log(error)
     }
