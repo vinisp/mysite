@@ -21,8 +21,18 @@ const useStyles = makeStyles((theme) => ({
 
 export function Main(){
   const classes = useStyles();
+
+  const getPosts = async () => {
+    try{
+      const posts = await fetch("https://deppback.herokuapp.com/").then((data) => data.json())
+    }catch(error){
+      console.log(error)
+    }
+  }
+
   return(
   <>
+  {console.log(getPosts())}
 <div className="main">
 
       <div className="artMain"> <img src={art1} alt="flat-design"/> </div>
